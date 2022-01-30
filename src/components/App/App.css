@@ -1,0 +1,13 @@
+.article {
+  width: 60vw;
+}
+
+.title {
+  text-align: center;
+  margin: 10px 0 40px 0;
+}
+
+.App {
+  background-color: rgba(117, 117, 117, 0.185);
+  margin: 40px 20px 0 20px;
+}

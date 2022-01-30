@@ -5,9 +5,10 @@ import Article from "../Article";
 function App() {
   return (
     <div className="App">
-      <h1>WikiPigeon</h1>
+      <h1 className="title">WikiPigeon</h1>
       {articles.map((article, index) => {
-        return <Article article={articles[index]} />;
+        console.log(article, index);
+        return <Article className="article" article={articles[index]} />;
       })}
     </div>
   );
