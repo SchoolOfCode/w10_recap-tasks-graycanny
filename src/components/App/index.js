@@ -1,14 +1,14 @@
-import "./App.css";
+import css from "./App.module.css";
 import articles from "../../libs/articles";
 import Article from "../Article";
 
 function App() {
   return (
-    <div className="App">
-      <h1 className="title">WikiPigeon</h1>
+    <div className={css.App}>
+      <h1 className={css.title}>WikiPigeon</h1>
       {articles.map((article, index) => {
         console.log(article, index);
-        return <Article className="article" article={articles[index]} />;
+        return <Article className={css.article} article={articles[index]} />;
       })}
     </div>
   );

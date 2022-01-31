@@ -1,10 +1,10 @@
 import React from "react";
-import "./Title.css";
+import css from "./Title.module.css";
 
 function Title({ title }) {
   return (
     <div>
-      <h2 className="articleTitle">{title}</h2>
+      <h2 className={css.articleTitle}>{title}</h2>
     </div>
   );
 }

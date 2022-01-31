@@ -1,5 +1,5 @@
 import React from "react";
-import "./article.css";
+import css from "./Article.module.css";
 import Title from "../Title";
 import Para from "../Para";
 import Comments from "../Comments";
@@ -12,7 +12,7 @@ function Article({ article }) {
       <article className="post">
         <Title title={article.title} />
         <Divider />
-        <Para className="para" para={article.paragraphs} />
+        <Para className={css.para} para={article.paragraphs} />
         <Divider />
         <Button className="like-button">Like 👍</Button>
         <Divider />
